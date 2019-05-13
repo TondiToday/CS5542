@@ -6,6 +6,7 @@ import org.apache.spark.mllib.clustering.GaussianMixture
 object EM_Clustering {
   def main(args: Array[String]): Unit = {
     // System.setProperty("hadoop.home.dir", "D:\\Mayanka Lenevo F Drive\\winutils")
+    System.setProperty("hadoop.home.dir", "C:\\utils")
     val sparkConf = new SparkConf().setAppName("SparkWordCount").setMaster("local[*]")
     val sc = new SparkContext(sparkConf)
 
